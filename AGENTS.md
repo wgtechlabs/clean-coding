@@ -2,8 +2,8 @@
 
 ## Scope and source of truth
 
-This repository distributes the `clean-development` skill as the `clean-coding` Codex plugin.
-The canonical instructions are in `skills/clean-development/SKILL.md`. Keep the skill
+This repository distributes the `clean-coding` skill as the `clean-coding` Codex plugin.
+The canonical instructions are in `skills/clean-coding/SKILL.md`. Keep the skill
 self-contained: source-lineage links are attribution, not runtime dependencies.
 Read the current skill and affected packaging files before changing behavior.
 Preserve unrelated changes and keep edits limited to the requested outcome.
@@ -11,7 +11,7 @@ Preserve unrelated changes and keep edits limited to the requested outcome.
 ## Packaging and documentation
 
 - Keep the plugin name `clean-coding` in `.codex-plugin/plugin.json` and the marketplace entry in `.agents/plugins/marketplace.json`.
-- Keep the skill folder and frontmatter name `clean-development` consistent. Repository and skill names need not be identical.
+- Keep the skill folder and frontmatter name `clean-coding` consistent. Repository and skill names need not be identical.
 - The marketplace entry points to the repository root (`./`); the plugin discovers skills under `./skills/`.
 - Update README examples when invocation, installation, or behavior changes.
 - Preserve upstream source attribution and the MIT license. Do not add dependencies on locally installed skills or machine-specific paths.
