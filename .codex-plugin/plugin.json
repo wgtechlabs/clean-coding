@@ -1,0 +1,33 @@
+{
+  "name": "clean-coding",
+  "version": "0.1.0",
+  "description": "Self-contained development guidance for focused implementation and verification.",
+  "author": {
+    "name": "WG Technology Labs",
+    "url": "https://github.com/wgtechlabs"
+  },
+  "homepage": "https://github.com/wgtechlabs/clean-coding",
+  "repository": "https://github.com/wgtechlabs/clean-coding",
+  "license": "MIT",
+  "keywords": [
+    "development",
+    "coding",
+    "verification",
+    "skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Clean Coding",
+    "shortDescription": "Build software with focused verification",
+    "longDescription": "Implement features, fix bugs, and refactor with minimal complexity and evidence-backed verification.",
+    "developerName": "WG Technology Labs",
+    "category": "Productivity",
+    "capabilities": [
+      "Instructions"
+    ],
+    "websiteURL": "https://github.com/wgtechlabs/clean-coding",
+    "defaultPrompt": [
+      "Use Clean Development for this task."
+    ]
+  }
+}
