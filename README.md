@@ -20,7 +20,7 @@ Repository instructions and user requests remain authoritative. Installing this 
 
 ## Attribution
 
-Extracted from [Clean Workflow](https://github.com/wgtechlabs/clean-workflow), adapted from `focused-development`. The skill includes its source lineage and the Codelynx article that inspired the workflow.
+Extracted from [Clean Workflow](https://github.com/wgtechlabs/clean-workflow). The skill includes its source lineage and the Codelynx article that inspired the workflow.
 
 ## Contributing
 
