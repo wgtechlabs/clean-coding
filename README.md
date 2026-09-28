@@ -1,12 +1,12 @@
 # Clean Coding
 
-A standalone Codex plugin containing the `clean-development` skill for implementing features, fixing bugs, and refactoring with minimal complexity and evidence-backed verification.
+A standalone Codex plugin containing the `clean-coding` skill for implementing features, fixing bugs, and refactoring with minimal complexity and evidence-backed verification.
 
 ## Choose your setup
 
 | What you want | Install |
 | --- | --- |
-| Implementation, fixes, and refactoring only | [Clean Coding](https://github.com/wgtechlabs/clean-coding) (`clean-development`) |
+| Implementation, fixes, and refactoring only | [Clean Coding](https://github.com/wgtechlabs/clean-coding) (`clean-coding`) |
 | Code and pull-request reviews only | [Clean Code Review](https://github.com/wgtechlabs/clean-code-review) (`clean-code-review`) |
 | Both skills plus task routing and Git/delivery conventions | [Clean Workflow](https://github.com/wgtechlabs/clean-workflow) |
 
@@ -25,8 +25,8 @@ codex plugin marketplace add wgtechlabs/clean-coding
 codex plugin add clean-coding@clean-coding
 ```
 
-Start a new chat after installation and invoke `$clean-development`.
-Agents supporting the Agent Skills format can load `skills/clean-development/` directly.
+Start a new chat after installation and invoke `$clean-coding`.
+Agents supporting the Agent Skills format can load `skills/clean-coding/` directly.
 
 ## Scope
 
@@ -42,7 +42,7 @@ Extracted from [Clean Workflow](https://github.com/wgtechlabs/clean-workflow). T
 
 ## Contributing
 
-This repository is the canonical source for `clean-development`. Make changes to this
+This repository is the canonical source for `clean-coding`. Make changes to this
 skill here; Clean Workflow consumes released updates as reviewed downstream
 imports. The bundle can lag behind the standalone release until its update PR
 is reviewed and merged.
