@@ -5,6 +5,12 @@ Release entries are maintained by Release Build Flow using Clean Commit history.
 ## [Unreleased]
 
 
+## [1.0.0] - 2026-09-28
+
+### Changed
+
+- **BREAKING:** rename development skill to clean-coding (#5)
+
 ## [0.1.0] - 2026-09-28
 
 ### Added
