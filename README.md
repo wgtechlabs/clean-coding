@@ -34,6 +34,8 @@ The skill covers clarification, implementation, relevant UI design and polish, v
 
 Repository instructions and user requests remain authoritative. Installing this skill does not authorize publishing, merging, or deploying changes.
 
+Addressing review feedback includes verifying each comment, implementing necessary fixes, replying directly to every addressed review thread with evidence, and resolving it only after remote verification. A general PR comment does not replace a thread reply.
+
 ## Attribution
 
 Extracted from [Clean Workflow](https://github.com/wgtechlabs/clean-workflow). The skill includes its source lineage and the Codelynx article that inspired the workflow.
