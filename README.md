@@ -30,11 +30,17 @@ Agents supporting the Agent Skills format can load `skills/clean-coding/` direct
 
 ## Scope
 
-The skill covers clarification, implementation, relevant UI design and polish, verification, and maintainability review. It is self-contained and requires no other skills. Repository access and task-specific development tools are still needed.
+The skill covers clarification, implementation, PR merge-conflict resolution, relevant UI design and polish, verification, and maintainability review. It is self-contained and requires no other skills. Repository access and task-specific development tools are still needed.
 
 Repository instructions and user requests remain authoritative. Installing this skill does not authorize publishing, merging, or deploying changes.
 
 Addressing review feedback includes verifying each comment, implementing necessary fixes, replying directly to every addressed review thread with evidence, and resolving it only after remote verification. A general PR comment does not replace a thread reply.
+
+For example: “Use `$clean-coding` to address this PR's review feedback and resolve
+its merge conflicts. Push the fixes and verify the current remote mergeability.”
+The skill preserves both intended behaviors during conflict resolution, follows
+the repository's merge or rebase policy, and reports unknown mergeability as
+unverified. It does not merge or approve the PR.
 
 ## Attribution
 

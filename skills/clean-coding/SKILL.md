@@ -1,6 +1,6 @@
 ---
 name: clean-coding
-description: Implement features, fix bugs, refactor code, and complete scoped engineering changes with minimal complexity and evidence-backed verification. Use when the user asks to build, add, fix, implement, change software, or address code-review feedback; not for review-only requests, general explanations, or non-coding tasks.
+description: Implement features, fix bugs, refactor code, address code-review feedback, and resolve PR merge conflicts with minimal complexity and evidence-backed verification. Use for scoped implementation or preparing a PR for merge; not for review-only requests, general explanations, or non-coding tasks.
 ---
 
 # Clean Coding
@@ -35,6 +35,37 @@ For substantial work, state a short implementation plan tied to acceptance crite
 Follow Analyze → Plan → Execute → eXamine, scaled to the task. Put behavior in the canonical layer, reuse established conventions, and fix root causes where affected callers converge. Keep changes cohesive; do not scatter guards across callers when the shared contract needs correction.
 
 Re-plan when code or runtime evidence invalidates an assumption. Keep deferred work and incomplete criteria visible during longer tasks. When delegation is separately authorized and useful, bound each independent subtask by objective, allowed files, excluded scope, and completion evidence; inspect returned changes before integrating them.
+
+## Resolve PR merge conflicts
+
+For authorized PR implementation or a request to make a PR ready, handle merge
+conflicts as part of the requested change. Preserve explicit no-push and other
+delivery limits; conflict resolution does not authorize merging or approving the PR.
+
+1. Fetch the PR's actual base and head repositories, branches, and current commits;
+   do not assume the default branch is its base. Inspect local changes and any
+   merge or rebase already in progress. Preserve unrelated work and collaborator
+   commits, using an isolated checkout when needed rather than resetting them.
+2. Follow the repository's merge or rebase policy for integrating the base into
+   the PR branch. Prefer an approach that preserves published history when the
+   policy allows it. Do not force-push without explicit authorization; if a
+   permitted rebase requires it, confirm that authority before rewriting history
+   and protect against overwriting a newer remote head.
+3. Resolve each conflict from the intent of both changes, surrounding code,
+   callers, and tests. Do not select blanket `ours` or `theirs` to clear conflicts.
+   Preserve both intended behaviors where compatible. Ask only when a material
+   behavior decision remains ambiguous after inspecting the evidence.
+4. Inspect the combined diff, confirm no unresolved conflicts remain, and run
+   checks that cover the integration and affected behavior. A successful merge
+   or rebase alone does not prove correctness.
+5. Deliver only within the authorized scope, then refetch the remote base and
+   head, verify the remote head contains the validated result, and check the
+   host's current mergeability result. If either moved beyond the validated
+   state, reconcile it and rerun affected checks before claiming readiness.
+   Recheck pending or unknown mergeability in a bounded wait; if it remains
+   unknown or cannot be fetched, report it as unverified. Local conflict
+   resolution is not remote readiness, and conflict-free status does not prove
+   required checks, reviews, or branch rules are satisfied.
 
 ## Address code-review feedback
 
