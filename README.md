@@ -32,6 +32,17 @@ Agents supporting the Agent Skills format can load `skills/clean-coding/` direct
 
 The skill covers clarification, implementation, PR merge-conflict resolution, relevant UI design and polish, verification, and maintainability review. It is self-contained and requires no other skills. Repository access and task-specific development tools are still needed.
 
+Implementation guidance combines WG Code Builder's structured debugging, stack
+awareness, and scoped security checks with language-neutral lessons from
+Functional Programming in Scala: predictable calculations, clear domain models
+and outcomes, explicit state ownership, useful composition, and property-based
+checks when the behavior warrants them. It follows the repository's language and
+conventions, permits confined local mutation, and requires no functional library.
+
+For example: “Use `$clean-coding` to fix this state-handling bug. Preserve the
+public API, make the relevant inputs and failure cases explicit, and verify the
+behavior using the existing tests.”
+
 Repository instructions and user requests remain authoritative. Installing this skill does not authorize publishing, merging, or deploying changes.
 
 Addressing review feedback includes verifying each comment, implementing necessary fixes, replying directly to every addressed review thread with evidence, and resolving it only after remote verification. A general PR comment does not replace a thread reply.
