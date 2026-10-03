@@ -5,6 +5,13 @@ Release entries are maintained by Release Build Flow using Clean Commit history.
 ## [Unreleased]
 
 
+## [1.1.0] - 2026-10-03
+
+### Added
+
+- strengthen practical coding principles (#8)
+- resolve PR conflicts with verified integration (#7)
+
 ## [1.0.0] - 2026-09-28
 
 ### Changed
